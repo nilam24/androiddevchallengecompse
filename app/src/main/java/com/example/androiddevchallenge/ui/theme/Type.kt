@@ -17,27 +17,90 @@ package com.example.androiddevchallenge.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
+import com.example.androiddevchallenge.R
+import com.example.androiddevchallenge.ui.theme.FontFamilyData.Companion.appFontFamily
 
 // Set of Material typography styles to start with
 val typography = Typography(
+    h1 = TextStyle(
+        fontFamily = appFontFamily,
+        fontWeight = FontWeight.W700,
+        fontSize = 18.sp,
+        letterSpacing = 0.sp
+    ),
+    h2 = TextStyle(
+        fontFamily = appFontFamily,
+        fontWeight = FontWeight.W600,
+        fontSize = 14.sp,
+        letterSpacing = .15.sp
+    ),
+    subtitle1 = TextStyle(
+        fontFamily = appFontFamily,
+        fontWeight = FontWeight.W300,
+        fontSize = 16.sp,
+        letterSpacing = 0.sp
+    ),
+
     body1 = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Normal,
-        fontSize = 16.sp
-    )
-        /* Other default text styles to override
+        fontFamily = appFontFamily,
+        fontSize = 14.sp,
+        letterSpacing = 0.sp,
+        fontWeight = FontWeight.W300
+    ),
+    body2 = TextStyle(
+        fontFamily = appFontFamily,
+        fontSize = 12.sp,
+        fontWeight = FontWeight.W300,
+        letterSpacing = 0.sp
+    ),
+
+    // Other default text styles to override
     button = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.W500,
-        fontSize = 14.sp
+        fontFamily = appFontFamily,
+        fontSize = 14.sp,
+        fontWeight = FontWeight.W600,
+        letterSpacing = 1.sp
     ),
     caption = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Normal,
-        fontSize = 12.sp
-    )
-    */
+        fontFamily = appFontFamily,
+        fontSize = 12.sp,
+        letterSpacing = 0.sp,
+        fontWeight = FontWeight.W600
+    ),
+
+    //////////////////////////
+//    body1 = TextStyle(
+//        fontFamily = appFontFamily,
+//        fontWeight = FontWeight.Normal,
+//        fontSize = 16.sp
+//    ),
+//        // Other default text styles to override
+//    button = TextStyle(
+//        fontFamily = appFontFamily,
+//        fontWeight = FontWeight.W500,
+//        fontSize = 14.sp
+//    ),
+//    caption = TextStyle(
+//        fontFamily = appFontFamily,
+//        fontWeight = FontWeight.Normal,
+//        fontSize = 12.sp
+//    )
 )
+class FontFamilyData {
+
+    companion object {
+        val appFontFamily = FontFamily(
+            fonts = listOf(
+                Font(
+                    resId = R.font.nunitosansbold, weight = FontWeight.W700,
+                ),
+                Font(resId = R.font.nunitosanssemibold, weight = FontWeight.W600),
+                (Font(resId = R.font.nunitosanslight, weight = FontWeight.W300))
+            )
+        )
+    }
+}
