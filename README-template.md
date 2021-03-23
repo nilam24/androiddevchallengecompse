@@ -1,13 +1,16 @@
 # Put title of your app here
+Weather App
 
 <!--- Replace <OWNER> with your Github Username and <REPOSITORY> with the name of your repository. -->
 <!--- You can find both of these in the url bar when you open your repository in github. -->
-![Workflow result](https://github.com/<OWNER>/<REPOSITORY>/workflows/Check/badge.svg)
+![Workflow result](https://github.com/<nilam24>/<androiddevchallengecompse>/workflows/Check/badge.svg)
+
 
 
 ## :scroll: Description
+ 
 <!--- Describe your app in one or two sentences -->
-
+Weather Forecast app
 
 ## :bulb: Motivation and Context
 <!--- Optionally point readers to interesting parts of your submission. -->
@@ -15,7 +18,21 @@
 
 
 ## :camera_flash: Screenshots
+![weather1](https://user-images.githubusercontent.com/25586486/112219332-d8efe100-8c4a-11eb-8059-898880f5e2bf.jpg)
+
+![weather2](https://user-images.githubusercontent.com/25586486/112219390-edcc7480-8c4a-11eb-88ae-6f1852cb88a0.jpg)
+
+![weather3](https://user-images.githubusercontent.com/25586486/112219433-f8870980-8c4a-11eb-845e-07fccfeb7d6d.jpg)
+
+
 <!-- You can add more screenshots here if you like -->
+
+
+
+
+
+
+
 <img src="/results/screenshot_1.png" width="260">&emsp;<img src="/results/screenshot_2.png" width="260">
 
 ## License
