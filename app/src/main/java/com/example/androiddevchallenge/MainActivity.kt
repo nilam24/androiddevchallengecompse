@@ -204,13 +204,17 @@ private fun ShowCardViewData(weatherDataList: List<WeatherDataModel>) {
 
                 Image(
                     painter = painterResource(id = R.drawable.ic_home_illos),
-                    modifier = Modifier.padding(24.dp,8.dp,0.dp,0.dp),
+                    modifier = Modifier.padding(24.dp, 8.dp, 0.dp, 0.dp),
                     contentDescription = "weather graph",
                     contentScale = ContentScale.FillBounds,
                     alignment = Alignment.Center
                 )
             }
-            Text(text="Forecast",modifier=Modifier.padding(16.dp,24.dp,0.dp,0.dp),style= typography.body1)
+            Text(
+                text = "Forecast",
+                modifier = Modifier.padding(16.dp, 24.dp, 0.dp, 0.dp),
+                style = typography.body1
+            )
             SetCardRowWeekWeatherList(data, weatherDataList)
         }
     }
@@ -218,7 +222,10 @@ private fun ShowCardViewData(weatherDataList: List<WeatherDataModel>) {
 }
 
 @Composable
-private fun SetCardRowWeekWeatherList(data: PaddingValues, weatherDataList: List<WeatherDataModel>) {
+private fun SetCardRowWeekWeatherList(
+    data: PaddingValues,
+    weatherDataList: List<WeatherDataModel>
+) {
     LazyRow(modifier = Modifier.padding(8.dp),
         horizontalArrangement = Arrangement.Start,
         contentPadding = data,
